@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <style>
+        /* CSS styles go here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color:blue;
+            color: #fof;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fdf;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Anuprabha</h1>
+        <p>Web developer</p>
+    </header>
+    <div class="container">
+        <section class="section">
+            <h2>CAREER OBJECTIVE</h2>
+            <p>Create value for my prospective employer through my dedicated and diligent efforts.
+            </p>
+        </section>
+        <section class="section">
+            <h2>Education</h2>
+            <p>Bachelor's Degree in Computer Application</p>
+            <p>Bharathiyar University</p>
+            <p>PURSUING</p>
+        </section>
+        <section class="section">
+            <h2>EDUCATIONAL QUALIFICATION</h2>
+            <h3> contact information </h3>
+            <p> E-mail: anusam0397@gmail.com</p>
+            <p> phone no: +91 7200861080</p>
+            <p> Linked id: https://www.linkedin.com/in/anuprabha-p-8b1802291? </p>
+        </section>
+        <section class="section">
+            <h2>Skills</h2>
+            <ul id="skillsList">
+                <li>HTML5</li>
+                <li>JavaScript</li>
+                <li>Responsive Web Design</li>
+                <li>Front-end Frameworks (e.g., Bootstrap)</li>
+            </ul>
+            <button onclick="toggleSkills()">Toggle Skills</button>
+        </section>
+    </div>
+
+    <script>
+        function toggleSkills() {
+            var skillsList = document.getElementById('skillsList');
+            if (skillsList.style.display === 'none' || skillsList.style.display === '') {
+                skillsList.style.display = 'block';
+            } else {
+                skillsList.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
